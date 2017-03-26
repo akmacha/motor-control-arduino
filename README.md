@@ -18,6 +18,7 @@ In the event of the motor stopping unexpectedly or accidentally, this fucntion r
 Stops the motor.
 # Usage
 First, copy the **Motor** folder into **My Documents/Arduino/libraries/**
+
 The motor constructor takes in 4 arguments: the two pins of the motor, the speed pin, and the initial speed. So, first, create an object of the **Motor** class like so:
 ```
 #include <Motor.h>
