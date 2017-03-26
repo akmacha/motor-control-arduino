@@ -17,6 +17,7 @@ In the event of the motor stopping unexpectedly or accidentally, this fucntion r
 ## 7. stopMotor():
 Stops the motor.
 # Usage
+First, copy the **Motor** folder into **My Documents/Arduino/libraries/**
 The motor constructor takes in 4 arguments: the two pins of the motor, the speed pin, and the initial speed. So, first, create an object of the **Motor** class like so:
 ```
 #include <Motor.h>
@@ -36,5 +37,30 @@ void setup() {
   pinMode(pin2, OUTPUT);
   pinMode(speed_pin, OUTPUT);
 
+}
+```
+Next, we go to the **void loop()** function, where we call all the fucntions. This is a sample that calls all of the functions defined in the library.
+```
+void loop() {
+  
+  m.goClock(200);
+  delay(5000);
+  m.stopMotor();
+  delay(3000);
+  m.goAClock(200);
+  delay(5000);
+  m.stopMotor();
+  delay(3000);
+  m.restore();
+  delay(4000);
+  m.goClock(200);
+  delay(3000);
+  m.slowDown(100);
+  delay(5000);
+  m.speedUp(50);
+  delay(5000);
+  m.writeSpeed(250);
+  delay(5000);
+  
 }
 ```
