@@ -13,9 +13,9 @@ Slows down the motor by 's' units.
 ## 5. writeSpeed(int s):
 Sets the speed of the motor to 's' units.
 ## 6. restore():
-In the event of the motor stopping unexpectedly or accidentally, this fucntion restores the motor to its last known speed and direction.
+In the event of the motor stopping unexpectedly or accidentally, this function restores the motor to its last known speed and direction.
 ## 7. stopMotor():
-Stops the motor.
+Stops the motor. ¯\_(ツ)_/¯
 # Usage
 First, copy the **Motor** folder into **My Documents/Arduino/libraries/**
 
